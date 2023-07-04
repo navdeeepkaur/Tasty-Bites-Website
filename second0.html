@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style0.css">
+    <script type="text/javascript" src="script.js">
+
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<script src="https://unpkg.com/jspdf-autotable@3.5.22/dist/jspdf.plugin.autotable.js"></script>
+  </head>
+  <body>
+<div class="header">
+
+  <a href="#chinese-section"><img src="images/second/header/chinese.jpg"></a>
+  <a href="#non-veg-section"><img src="images/second/header/chicken.jpg"></a>
+  <a href="#vegetarian-section"><img src="images/second/header/veg.jpg"></a>
+  <a href="#drinks-desserts-section"><img src="images/second/header/chinese.jpg"></a>
+
+</div>
+<div class="search-bar">
+    <input type="text" name="" value="" class="search-item" id="search-item" placeholder="Search your favourite food"onkeyup="search1()">
+    <img src="search.png">
+</div>
+<!--<?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
+<a href="logout.php">Logout</a> -->
+<div class="sections" id="parent">
+<div class="food-sections">
+  <div class="sub2" id="product-list">
+  <div class="section-header" id="section-header" style="grid-column:1/4">
+    <p> <b> Fast food </b></p>
+    <hr>
+  </div>
+  <div class="card" id="item1">
+    <img src="images/second/fast-food/cheeseballs.jpg">
+    <div class="card-internal">
+    <p id="title"> <b> Cheese Balls </b></p>
+    <h6>| $4</h6>
+    </div>
+    <small>Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+    <button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+    </div>
+    <div class="card" id="item1">
+     <img src="images/second/fast-food/burger.jpg">
+     <div class="card-internal">
+     <p> <b> Cheese Burger </b></p>
+     <h6>| $4</h6>
+     </div>
+     <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+     <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+    </div>
+      <div class="card" id="item1">
+   <img src="images/second/fast-food/green-wave-pizza.jpg">
+   <div class="card-internal">
+   <p id="title"> <b> Green Wave Pizza </b></p>
+   <h6>| $4</h6>
+   </div>
+   <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+   <button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+  <div class="card">
+   <img src="images/second/fast-food/garlic-bread.jpg">
+   <div class="card-internal">
+   <p> <b> Garlic Bread </b></p>
+   <h6>| $4</h6>
+   </div>
+   <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+   <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+  </div>
+
+<div class="card">
+<img src="images/second/fast-food/potato-chips.jpg">
+<div class="card-internal">
+<p> <b> Potato Chips </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/fast-food/taco-mexican-veg.jpg">
+<div class="card-internal">
+<p> <b> Mexican Veg Taco </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+  <div class="card" id="item1">
+<img src="images/second/fast-food/hotdog.jpg">
+<div class="card-internal">
+<p id="title"> <b> Hot Dog </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/fast-food/french-fries.jpg">
+<div class="card-internal">
+<p> <b> French Fries </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/fast-food/sandwich.jpg">
+<div class="card-internal">
+<p> <b> Sandwich </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="section-header" id="section-header" style="grid-column:1/4">
+  <p> <b> Vegetarian </b></p>
+  <hr>
+</div>
+      <div class="card" id="item1">
+   <img src="images/second/vegetarian/chilly-paneer.jpg">
+   <div class="card-internal">
+   <p id="title"> <b> Chilly Paneer </b></p>
+   <h6>| $4</h6>
+   </div>
+   <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+   <button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/vegetarian/curry.jpg">
+ <div class="card-internal">
+ <p> <b> Curry </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/vegetarian/mix-veg.jpg">
+ <div class="card-internal">
+ <p> <b> Mix Veg </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+
+  <div class="card" id="item1">
+<img src="images/second/vegetarian/biryani.jpg">
+<div class="card-internal">
+<p id="title"> <b> Biryani</b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/vegetarian/chana-masala.jpg">
+<div class="card-internal">
+<p> <b> Chana Masala </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/vegetarian/chapatti.jpg">
+<div class="card-internal">
+<p> <b> Chapatti </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+
+  <div class="card" id="item1">
+<img src="images/second/vegetarian/salad.jpg">
+<div class="card-internal">
+<p id="title"> <b> Mix Green Salad </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/vegetarian/boondi-raita.jpg">
+<div class="card-internal">
+<p> <b> Boondi Raita </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/vegetarian/soup.jpg">
+<div class="card-internal">
+<p> <b> Soup </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="section-header" id="section-header" style="grid-column:1/4">
+  <p> <b> Chinese </b></p>
+  <hr>
+</div>
+
+      <div class="card" id="item1">
+   <img src="images/second/chinese/noodles.jpg">
+   <div class="card-internal">
+   <p id="title"> <b> Noodles </b></p>
+   <h6>| $4</h6>
+   </div>
+   <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+   <button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/chinese/manchurian.jpg">
+ <div class="card-internal">
+ <p> <b> Manchurian </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/chinese/spring-roll.jpg">
+ <div class="card-internal">
+ <p> <b> Spring Rolls </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+
+
+  <div class="card" id="item1">
+<img src="images/second/chinese/steamed-momos.jpg">
+<div class="card-internal">
+<p id="title"> <b> Steamed Momos </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/chinese/creamy-veg-pasta.jpg">
+<div class="card-internal">
+<p> <b> Creamy Veg Pasta </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/chinese/redsauce-pasta.jpg">
+<div class="card-internal">
+<p> <b> Red Sauce Pasta </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+  <div class="card" id="item1">
+<img src="images/second/chinese/fried-rice.jpg">
+<div class="card-internal">
+<p id="title"> <b> Fresh Fried Rice </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/chinese/sushi.jpg">
+<div class="card-internal">
+<p> <b> Sushi </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/chinese/spaghetti.jpg">
+<div class="card-internal">
+<p> <b> Spaghetti </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="section-header" id="section-header" style="grid-column:1/4">
+  <p> <b> Drinks and Desserts </b></p>
+  <hr>
+</div>
+      <div class="card" id="item1">
+   <img src="images/second/drinks-desserts/tea.jpg">
+   <div class="card-internal">
+   <p id="title"> <b> Tea </b></p>
+   <h6>| $4</h6>
+   </div>
+   <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+   <button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/drinks-desserts/coffee.jpg">
+ <div class="card-internal">
+ <p> <b> Coffee </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/drinks-desserts/mojito.jpg">
+ <div class="card-internal">
+ <p> <b> Mojito </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+
+  <div class="card" id="item1">
+<img src="images/second/drinks-desserts/blue-lagoon.jpg">
+<div class="card-internal">
+<p id="title"> <b> Blue Lagoon </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/drinks-desserts/pastry.jpg">
+<div class="card-internal">
+<p> <b> Pastry </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/drinks-desserts/ice-cream.jpg">
+<div class="card-internal">
+<p> <b> Ice Cream </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+  <div class="card" id="item1">
+<img src="images/second/drinks-desserts/cupcakes.jpg">
+<div class="card-internal">
+<p id="title"> <b> Cup Cakes </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/drinks-desserts/gulab-jamun.jpg">
+<div class="card-internal">
+<p> <b> Gulab Jamnun </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/drinks-desserts/donut.jpg">
+<div class="card-internal">
+<p> <b> Donuts </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="section-header" id="section-header" style="grid-column:1/4">
+  <p> <b> Non-Vegetarian </b></p>
+  <hr>
+</div>
+
+      <div class="card" id="item1">
+   <img src="images/second/nonveg/chicken-fingers.jpg">
+   <div class="card-internal">
+   <p id="title"> <b> Chicken Fingers </b></p>
+   <h6>| $4</h6>
+   </div>
+   <small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+   <button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/nonveg/chicken-chunks.jpg">
+ <div class="card-internal">
+ <p> <b> Spicy Chicken Chunks </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Soft juicy chicken pieces coated with spicy harissa sauce and sprinkled with basil parsley</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+ <img src="images/second/nonveg/meatballs.jpg">
+ <div class="card-internal">
+ <p> <b> Cheesy Meatballs </b></p>
+ <h6>| $4</h6>
+ </div>
+ <small> Cheesy delicious chicken meatballs coated with a layer of spicy tangy sauces and exotic toppings</small>
+ <button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+  <div class="card" id="item1">
+<img src="images/second/nonveg/grilled-chicken-burger.jpg">
+<div class="card-internal">
+<p id="title"> <b> Grilled Chicken Burger </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button onclick="addtocart(item1)" type="button" ><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/nonveg/chicken-pizza.jpg">
+<div class="card-internal">
+<p> <b> Pepperoni Topped Pizza </b></p>
+<h6>| $4</h6>
+</div>
+<small> A classic American taste! Relish the delectable flavor of Chicken Pepperoni, topped with cheese</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card">
+<img src="images/second/nonveg/chicken-biryani.jpg">
+<div class="card-internal">
+<p> <b> Chicken Biryani </b></p>
+<h6>| $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+
+
+  <div class="card shop-item" >
+<img class="shop-item-image" src="images/second/nonveg/chiken-tikka.jpg">
+<div class="card-internal">
+<p class="shop-item-title"> <b> Chicken Tikka </b></p>
+<h6 class="shop-item-price"> $4</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" class="btn btn-primary shop-item-button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card shop-item">
+<img class="shop-item-image" src="images/second/nonveg/nuggets.jpg">
+<div class="card-internal">
+<p class="shop-item-title"> <b> Peppy Chicken Nuggets </b></p>
+<h6 class="shop-item-price">$4</h6>
+</div>
+<small> Oven baked soft tender boneless nuggets sprinkled with peri peri seasoning</small>
+<button type="button" class="btn btn-primary shop-item-button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+<div class="card shop-item">
+<img class="shop-item-image" src="images/second/nonveg/chicken-soup.jpg">
+<div class="card-internal">
+<p class="shop-item-title"> <b> Chicken Soup </b></p>
+<h6 class="shop-item-price">$42</h6>
+</div>
+<small> Delightful combination of crisp onion, capsicum, tomato & jalepino</small>
+<button type="button" class="btn btn-primary shop-item-button" name="addtocart"><b>ADD TO CART</b></button>
+</div>
+</div>
+
+</div>
+
+
+<div class="container content-section" id="cart">
+    <h2><center class="section-header">CART</center></h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total:</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    <input type="button" value="click" id="print-btn" onclick="printDiv()">
+</div>
+</div>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+                    <script src="https://unpkg.com/jspdf-autotable@3.5.22/dist/jspdf.plugin.autotable.js"></script>
+  </body>
+</html>

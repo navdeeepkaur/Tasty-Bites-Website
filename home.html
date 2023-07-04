@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+    <form action="" method="POST" class="login-email">
+      <i class="fa-solid fa-xmark remove" id="remove" onclick="abc1('container')"></i>
+      <div class="login-upper">
+      <div>
+      <p class="login-text">Login</p>
+      <p class="login-register-text">or <button type="button" name="button" onclick="showDiv()"> create</button> </p>
+      </div>
+      <img src="login-side.png">
+      </div>
+      <hr>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Enter your email" name="email" required>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password" name="password" required>
+      </div>
+      <div class="input-group">
+        <button name="submit" class="btn" onclick="info()">LOGIN</button>
+      </div>
+
+    </form>
+  </div>
+    <div class="bg-cover">
+      <img src="bg1.jpeg">
+    </div>
+    <div class="cover-upper">
+    <div class="logo">
+  <img src="logo1.png">
+  <button type="button" name="button" id="login-button" class="login-button" onclick="abc('container')">Login</button>
+  <button type="button" name="button" id="signup-button" class="signup-button" onclick="abc('containers')">Sign Up</button>
+</div>
+<div class="cover-text">
+  <h4>Hungry?</h4>
+  <p>Order your favourite food now!</p><br>
+  <h2 id="user_name"></h2>
+</div>
+<form  action="second0.php" method="post">
+  <input type="submit" name="submit" id="submit" value="Find Food" class="button">
+
+</form>
+  </div>
+
+
+<div class="about-us">
+  <div class="about-us-img">
+
+  </div>
+  <div class="about-us-content">
+
+  </div>
+</div>
+
+
+
+
+
+<!--review section-->
+<div class="owl-carousel owl-theme carousel">
+<!--reviewcard1-->
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img src="cheeseballs.jpg">
+    </div>
+    <div class="name-rollno">
+      <span class="name"><b>Name</b></span>
+      <span class="rollno">Profession</span>
+    </div>
+    <div class="media-icons">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contribution">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img src="burger.jpg">
+    </div>
+    <div class="name-rollno">
+      <span class="name"><b>Name</b></span>
+      <span class="rollno">Profession</span>
+    </div>
+    <div class="media-icons">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contribution">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img src="french-fries.jpg">
+    </div>
+    <div class="name-rollno">
+      <span class="name"><b>Name</b></span>
+      <span class="rollno">Profession</span>
+    </div>
+    <div class="media-icons">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contribution">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img src="garlic-bread.jpg">
+    </div>
+    <div class="name-rollno">
+      <span class="name"><b>Name</b></span>
+      <span class="rollno">Profession</span>
+    </div>
+    <div class="media-icons">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contribution">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img src="green-wave-pizza.jpg">
+    </div>
+
+    <div class="name-rollno">
+      <span class="name"><b>Name</b></span>
+      <span class="rollno">Profession</span>
+    </div>
+    <div class="media-icons">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contribution">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img src="burger.jpg">
+    </div>
+    <div class="name-rollno">
+      <span class="name"><b>Name</b></span>
+      <span class="rollno">Profession</span>
+    </div>
+    <div class="media-icons">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contribution">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+    <div class="image">
+      <img src="cheeseballs.jpg">
+    </div>
+    <div class="name-rollno">
+      <span class="name"><b>Name</b></span>
+      <span class="rollno">Profession</span>
+    </div>
+    <div class="media-icons">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+    </div>
+    <div class="contribution">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--js for review-card-carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  dots:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})
+</script>
+
+<div class="get-the-app">
+ <img src="get-the-app.png">
+</div>
+<div class="contact-us">
+  <div class="contact-us-container">
+  <div class="contact-us-left">
+    <hr>
+    <div class="contact-us-content"><img src="address.png">123 Sunrise Avenue</div>
+    <div class="contact-us-content"><img src="mobile.png">123-456-7890</div>
+    <div class="contact-us-content"><img src="time.png"> Everyday: 9:00 am - 10:00 pm</div>
+    <div class="contact-us-content"><img src="email.png"> contacts@tastybites.com</div>
+    <hr>
+  </div>
+  <div class="contact-us-right">
+    <p style="">Send Us a Message</p>
+    <form  action="" method="post">
+      <table border=0 >
+      <tr><td>Name </td></tr>
+      <tr><td><input type="text" name="contact-name" ></td></tr>
+      <tr><td>Email</td></tr>
+      <tr><td><input type="email" name="contact-email" ></td></tr>
+      <tr><td>Subject</td></tr>
+      <tr><td><input type="text" name="contact-subject" ></td></tr>
+      <tr><td>Message</td></tr>
+      <tr><td><textarea name="contact-message" rows="10" cols="50"></textarea></td></tr>
+      <tr><td><input class="contact-submit" type="submit" name="" value="Send"></td></tr>
+      </table>
+    </form>
+  </div>
+ </div>
+</div>
+<div class="footer">
+              <div class="icon-container">
+                  <a href="https://www.linkedin.com/"><img src="linkedin.png"></i></a>
+                  <a href="https://github.com/"><img src="pinterest.png"></i></a>
+                  <a href="https://www.facebook.com/"><img src="facebook.png"></a>
+                  <a href="https://www.instagram.com"><img src="instagram.png"></i></a>
+                  <a href="https://twitter.com/"><img src="twitter.png"></i></a>
+                  <a href="https://github.com/"><img src="youtube.png"></i></a>
+              </div>
+              <div class="footer-text">
+                <p>Menu</p>
+                <p>About Us</p>
+                <p>Reviews</p>
+                <p>Get App</p>
+                <p>Contact Us</p>
+                <p>About Us</p>
+              </div>
+              <div class="footer-copyright">©2022 Copyright Tasty Bites</div>
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="burger.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="french-fries.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="green-wave-pizza.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+  </body>
+</html>
+
+  </body>
+</html>
